@@ -22,6 +22,9 @@
 </head>
 
 <body>
+
+<!-- -----------------------------------MOBILE------------------------------------ -->
+
     <!--Barra de navegação - Icone Menu - Mobile -->
     <nav style="display: none;" class="hide-nav-mobile nav-menu">
         <div class="nav-menu-options">
@@ -90,7 +93,60 @@
     </div>
 
 
-    <!-- -----------------DESKTOP------------------------------ -->
+    <!--Carrosel Imagens - Mobile-->
+    <main class="hide-nav-mobile">
+        <div class="hide-nav-mobile carousel-image">
+            <img src="../images/image-product-1.jpg" alt="Image Product 1">
+            <button class="button-image" type="button">
+                <img src="../images/icon-previous.svg" alt="Icon Previous">
+            </button>
+            <button class="button-image" type="button">
+                <img src="../images/icon-next.svg" alt="Icon Next">
+            </button>
+        </div>
+
+        <!--Informações sobre produto - Mobile-->
+        <div class="hide-nav-mobile product">
+        <!--Texto sobre o produto-->
+            <div class="text-product">
+                <h2>Sneaker Company</h2>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                   durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            </div>
+        <!--Preço do produto-->
+            <div class="value-product">
+                <div>
+                    <span class="total">    $125.00  </span>
+                    <span class="discount"> 50%      </span>
+                </div>
+                <span class="value">    $250.00  </span>
+            </div>
+        
+        <!--Quantidade do produto-->
+            <div class="button-product">
+                <div class="button-quantity">
+                    <button type="button">
+                        <img src="../images/icon-minus.svg" alt="Remove">
+                    </button>
+            
+                    <span class="value-quantity">0</span> 
+            
+                    <button>
+                        <img src="../images/icon-plus.svg" alt="Add">
+                    </button>
+                </div>
+        <!--Adicionar produto ao carrinho-->
+                <button class="button-add-cart">
+                    <img src="../images/icon-cart.svg" alt="Icon Cart">
+                    <span>Add to cart</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- ---------------------------------DESKTOP--------------------------------------- -->
 
 
     <header class="header-desktop nav-list-desktop">
@@ -119,6 +175,39 @@
             </div>
         </div>
     </header>
+
+        <!--Opção ver carrinho (Vazio) -->
+        <div style="display: none;" class="nav-list-desktop cart-products-empty">
+            <div class="cart-products-title">
+                <h4>Cart</h4>
+            </div>
+            <div class="line-decoration"></div>
+            <div class="cart-product-text">
+                <p>Your cart is empty.</p>          
+            </div>
+        </div>
+
+        <!--Opção ver carrinho (cheio) -->
+    <div style="display: none;" class="nav-list-desktop cart-products-full">
+        <div class="cart-products-title">
+            <h4>Cart</h4>
+        </div>
+        <div class="line-decoration"></div>
+
+        <div class="cart-products">
+            <div class="product-itens">
+                <img src="../images/image-product-1-thumbnail.jpg" alt="Image Product 1">
+                    <div class="product-text">
+                        <p>Fall Limited Edition Sneakers</p>
+                        <span class="total">    $125.00 x 3  </span>
+                        <span class="value">    $375.00      </span>
+                    </div>
+                <img id="button-delete-2" src="../images/icon-delete.svg" alt="Icon Delete">
+            </div>
+            <button type="button">Checkout</button>
+        </div>
+    </div>
+
 
     <main class="main-desktop">
         <!--Carrosel Imagens - Desktop-->
@@ -173,60 +262,6 @@
             </div>
     </main>
 
-
-    <!-- -------------------------MOBILE------------------------- -->
-
-    <!--Carrosel Imagens - Mobile-->
-    <main class="hide-nav-mobile">
-        <div class="hide-nav-mobile carousel-image">
-            <img src="../images/image-product-1.jpg" alt="Image Product 1">
-            <button class="button-image" type="button">
-                <img src="../images/icon-previous.svg" alt="Icon Previous">
-            </button>
-            <button class="button-image" type="button">
-                <img src="../images/icon-next.svg" alt="Icon Next">
-            </button>
-        </div>
-
-        <!--Informações sobre produto - Mobile-->
-        <div class="hide-nav-mobile product">
-        <!--Texto sobre o produto-->
-            <div class="text-product">
-                <h2>Sneaker Company</h2>
-                <h1>Fall Limited Edition Sneakers</h1>
-                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
-                   durable rubber outer sole, they'll withstand everything the weather can offer.</p>
-            </div>
-        <!--Preço do produto-->
-            <div class="value-product">
-                <div>
-                    <span class="total">    $125.00  </span>
-                    <span class="discount"> 50%      </span>
-                </div>
-                <span class="value">    $250.00  </span>
-            </div>
-        
-        <!--Quantidade do produto-->
-            <div class="button-product">
-                <div class="button-quantity">
-                    <button type="button">
-                        <img src="../images/icon-minus.svg" alt="Remove">
-                    </button>
-            
-                    <span class="value-quantity">0</span> 
-            
-                    <button>
-                        <img src="../images/icon-plus.svg" alt="Add">
-                    </button>
-                </div>
-        <!--Adicionar produto ao carrinho-->
-                <button class="button-add-cart">
-                    <img src="../images/icon-cart.svg" alt="Icon Cart">
-                    <span>Add to cart</span>
-                </button>
-            </div>
-        </div>
-    </main>
 
     <div class="attribution" style="display: none;">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
