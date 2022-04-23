@@ -349,15 +349,13 @@ p{
     }
     .button-add-cart > img{
         height: 12px;
-        padding-right: 5px;
-        
+        padding-right: 5px;     
     }
     .value-quantity {
         font-weight: 700;
         font-size: 12px;
     }
     
-        
 }
 
 
