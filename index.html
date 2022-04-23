@@ -20,6 +20,7 @@
         .attribution a { color: hsl(228, 45%, 44%); }
     </style>
 </head>
+
 <body>
     <!--Barra de navegação - Icone Menu - Mobile -->
     <nav style="display: none;" class="hide-nav-mobile nav-menu">
@@ -36,7 +37,7 @@
     </nav>
     
     <!--Icones opções do menu-->
-    <header >
+    <header class="hide-nav-mobile">
         <div class="menu">
             <div class="itens-menu-1">
                 <button  type="button">
@@ -88,9 +89,97 @@
         </div>
     </div>
 
-    <!--Carrosel Imagens-->
-    <main>
-        <div class="carousel-image">
+
+    <!-- -----------------DESKTOP------------------------------ -->
+
+
+    <header class="header-desktop nav-list-desktop">
+        <div class="menu">
+            <div class="itens-menu-1">
+                <img src="../images/logo.svg" alt="Icon Logo">
+
+                <div>
+                    <ul class="options-menu">
+                        <li><a href="#">Collections </a></li>
+                        <li><a href="#">Men </a></li>
+                        <li><a href="#">Women </a></li>
+                        <li><a href="#">About </a></li>
+                        <li><a href="#">Contact </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="itens-menu-2">
+                <button  type="button">
+                    <img src="../images/icon-cart.svg" alt="Icon Cart">
+                </button>
+                <button type="button">
+                    <img id="img-perfil" src="../images/image-avatar.png" alt="Icon Profile">
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main-desktop">
+        <!--Carrosel Imagens - Desktop-->
+        
+        <div class="nav-list-desktop carousel-image-desktop">
+            <img src="../images/image-product-1.jpg" alt="Image Product 1">
+            <div class="image-thumbnail">
+                <img src="../images/image-product-1-thumbnail.jpg" alt="Image Product 1">
+                <img src="../images/image-product-2-thumbnail.jpg" alt="Image Product 1">
+                <img src="../images/image-product-3-thumbnail.jpg" alt="Image Product 1">
+                <img src="../images/image-product-4-thumbnail.jpg" alt="Image Product 1">
+            </div>
+        </div>
+
+        <!--Informações sobre produto - Desktop-->
+        <div class="nav-list-desktop product">
+            <!--Texto sobre o produto-->
+                <div class="text-product">
+                    <h2>Sneaker Company</h2>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                       durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                </div>
+            <!--Preço do produto-->
+                <div class="value-product">
+                    <div>
+                        <span class="total">    $125.00  </span>
+                        <span class="discount"> 50%      </span>
+                    </div>
+                    <span class="value">    $250.00  </span>
+                </div>
+            
+            <!--Quantidade do produto-->
+                <div class="button-product">
+                    <div class="button-quantity">
+                        <button type="button">
+                            <img src="../images/icon-minus.svg" alt="Remove">
+                        </button>
+                
+                        <span class="value-quantity">0</span> 
+                
+                        <button>
+                            <img src="../images/icon-plus.svg" alt="Add">
+                        </button>
+                    </div>
+            <!--Adicionar produto ao carrinho-->
+                    <button class="button-add-cart">
+                        <img src="../images/icon-cart.svg" alt="Icon Cart">
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+    </main>
+
+
+    <!-- -------------------------MOBILE------------------------- -->
+
+    <!--Carrosel Imagens - Mobile-->
+    <main class="hide-nav-mobile">
+        <div class="hide-nav-mobile carousel-image">
             <img src="../images/image-product-1.jpg" alt="Image Product 1">
             <button class="button-image" type="button">
                 <img src="../images/icon-previous.svg" alt="Icon Previous">
@@ -100,8 +189,8 @@
             </button>
         </div>
 
-
-        <div class="product">
+        <!--Informações sobre produto - Mobile-->
+        <div class="hide-nav-mobile product">
         <!--Texto sobre o produto-->
             <div class="text-product">
                 <h2>Sneaker Company</h2>
@@ -111,8 +200,10 @@
             </div>
         <!--Preço do produto-->
             <div class="value-product">
-                <span class="total">    $125.00  </span>
-                <span class="discount"> 50%      </span>
+                <div>
+                    <span class="total">    $125.00  </span>
+                    <span class="discount"> 50%      </span>
+                </div>
                 <span class="value">    $250.00  </span>
             </div>
         
