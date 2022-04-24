@@ -41,28 +41,42 @@ button {
 }
 .button-image{
     position: absolute;
-    margin: 10px;
-    top: 40%;
-    padding: 10px;
-    border-radius: 1rem;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    top: calc(50% - 25px);
 }
-
+.button-image >img{
+    width: 9px;
+}
+.button-previous{
+    left: 1rem;
+}
+.button-next{
+    right: 1rem;
+}
 /* Texto sobre o produto */
 h2{
     color: hsl(26, 100%, 55%);
     text-transform: uppercase; 
-    font-size: 12px;
-    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 11px;
 }
 h1{
-   font-size: 30px; 
+   font-size: 24px; 
    font-weight: 700;
+   padding-bottom: 10px;
+   padding-top: 15px;
 }
 p{
     font-size: 16px;
+    line-height: 22px;
+    color: hsl(219, 9%, 45%);
 }
 .product{
-    padding: 1.5rem;
+    margin: 1.5rem;
 }
 .text-product{
     padding-top: 10px;
@@ -91,20 +105,58 @@ p{
     padding-bottom: 14px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 2px;
     border-radius: 10px;
 }
 .button-add-cart{
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
     padding-top:14px;
     padding-bottom:14px;
     background-color:hsl(26, 100%, 55%);
     color: white;
     border-radius: 10px;   
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+.button-add-cart > img{
+    margin-right: 5px;
 }
 .value-quantity {
     font-weight: 700;
 }
+
+.value-product{
+    font-weight: bold;
+}
+.value-discount{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.total{
+    font-size: 24px; 
+    font-weight: 700;
+}
+.discount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 4px;
+    padding: 4px;
+    color: hsl(26, 100%, 50%);
+    margin-left: 10px;
+}
+.value{
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+
 
 /* Produtos adicionados ao carrinho (Vazio) - Mobile */
 .cart-products-empty {
@@ -116,14 +168,12 @@ p{
     height: 32%;
     width: 95%;
     z-index: 1;
-
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: bold;
 }
 .line-decoration{
     height: 3px;
     background-color: hsl(223, 64%, 98%);
-
 }
 .cart-products-title{
     padding: 1.5rem;
@@ -195,7 +245,6 @@ p{
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
-    
 }
 .nav-menu-options{
     background-color: white;
@@ -228,10 +277,29 @@ p{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-left: 13%;
-        padding-right: 13%;
-        padding-bottom: 4%;
-        padding-top: 2%;
+        align-items: center;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 5%;
+    }
+    /* Texto sobre o produto */
+    h2{
+        color: hsl(26, 100%, 55%);
+        text-transform: uppercase; 
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    h1{
+        font-size: 35px; 
+        font-weight: 700;
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 24px;
+        color: hsl(219, 9%, 45%);
     }
 
     /* Cabeçalho do site */
@@ -286,10 +354,8 @@ p{
         padding-bottom: 6px;
         height: 28%;
         width: 250px;
-
         top:13%;
         right: 8%;
-
         box-shadow: 0 0 10px hsl(220, 14%, 75%);
         font-family: 'Kumbh Sans', sans-serif;
         font-weight: bold;
@@ -312,23 +378,19 @@ p{
         box-shadow: 0 0 10px hsl(220, 14%, 75%);
         z-index: 1;
         font-family: 'Kumbh Sans', sans-serif;
-
         top:13%;
         right: 8%;
-
     }
     .cart-products-title{
         padding: 1.3rem;
         text-align: start;
         font-size: 12px;
     }
-
     .cart-products{
         display: flex;
         flex-direction: column;
         padding: 1rem;
         height: 10px;
-
         font-size: 11px;
     }
     .product-itens{
@@ -343,7 +405,7 @@ p{
         display: flex;
         flex-direction: column;
         margin-left: 8px;
-        margin-right: 8px;
+        margin-right: 8px;  
     }
 
     .cart-products > button{
@@ -368,12 +430,12 @@ p{
         margin: 1rem;
     }
     .carousel-image-desktop >img{
-        width: 300px;
+        width: 320px;
         border-radius: 8px;
         
     }
     .carousel-image-desktop > div >img{
-        width: 60px;
+        width: 63px;
         border-radius: 6px; 
     }
     .image-thumbnail{
@@ -389,7 +451,7 @@ p{
         flex-direction: column;
         justify-content: center;
         padding: 1.5rem;
-        padding: 8%;
+        width: 400px;
     }
     .text-product{
         padding-top: 10px;
@@ -408,32 +470,68 @@ p{
     .button-quantity{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
         background-color: hsl(223, 64%, 98%);
-        padding-left: 12%;
-        padding-right: 12%;
+        margin: 0;
+        width: 120px;
+        margin-right: 6px;
+    }
+    .button-quantity > * {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .button-quantity > button > img{
         width: 8px;
     }
-    .button-add-cart{
+    .button-add-cart {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
         background-color:hsl(26, 100%, 55%);
-        color: white;
-        border-radius: 7px;
-        padding-left: 17%;
-        padding-right: 17%;
-        font-size: 12px;
+        font-family: 'Kumbh Sans', sans-serif;
         font-weight: bold;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        width: 250px;
     }
     .button-add-cart > img{
-        height: 12px;
-        padding-right: 5px;     
+        width: 15px;
+        height: 16px; 
+        margin-right: 10px;
     }
     .value-quantity {
         font-weight: 700;
         font-size: 12px;
+    }
+
+    .value-product{
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+    .value-discount{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 8px;
+    }
+    .total{
+        font-size: 18px; 
+        font-weight: 700;
+    }
+    .discount{
+        background-color: hsl(25, 100%, 94%);
+        border-radius: 4px;
+        font-size: 10px;
+        color: hsl(26, 100%, 50%);
+    }
+    .value{
+        color: hsl(220, 14%, 75%);
+        text-decoration: line-through;
+        font-size: 11px;
     }
     
 }
