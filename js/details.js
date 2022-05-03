@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Aparecer e desaparecer carrinho
     const buttonCart = document.querySelector('.buttonCart');
+    const cartDesktop = document.getElementById('cart-desktop');
 
     buttonCart.addEventListener('click', () => {
-      const cartDesktop = document.getElementById('cart-desktop');
-      
-      console.log(buttonCart);
+      //cartDesktop.parentNode.removeChild(cartDesktop); //Funcionou
+      cartDesktop.style.display = 'none';                //Funcionou
     });
   });
 

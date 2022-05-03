@@ -547,6 +547,11 @@ p{
         text-decoration: line-through;
         font-size: 11px;
     }
+
+
+    .hidden{
+        display: none;
+    }
     
 }
 
