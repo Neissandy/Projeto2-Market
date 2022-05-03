@@ -23,8 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartDesktop = document.getElementById('cart-desktop');
 
     buttonCart.addEventListener('click', () => {
-      //cartDesktop.parentNode.removeChild(cartDesktop); //Funcionou - Fez desaparecer o carrinho
-      cartDesktop.style.display = 'none';                //Funcionou - Fez desaparecer o carrinho
-    });
+    //cartDesktop.parentNode.removeChild(cartDesktop); //Funcionou - Fez desaparecer o carrinho
+    cartDesktop.style.display = 'none';                //Funcionou - Fez desaparecer o carrinho
+    cartDesktop.style.display = 'block';               //Funcionou - Fez reaparecer o carrinho
+  });
   });
 
