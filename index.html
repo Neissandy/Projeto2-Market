@@ -156,7 +156,7 @@
             <div class="itens-menu-1">
                 <img src="./images/logo.svg" alt="Icon Logo">
 
-                <div>
+                <div >
                     <ul class="options-menu">
                         <li><a href="#">Collections </a></li>
                         <li><a href="#">Men </a></li>
@@ -168,10 +168,10 @@
             </div>
 
             <div class="itens-menu-2">
-                <button  type="button">
+                <button type="button" class="buttonCart">
                     <img src="./images/icon-cart.svg" alt="Icon Cart">
                 </button>
-                <button type="button">
+                <button type="button" >
                     <img id="img-perfil" src="./images/image-avatar.png" alt="Icon Profile">
                 </button>
             </div>
@@ -179,7 +179,7 @@
     </header>
 
         <!--Opção ver carrinho (Vazio) -->
-        <div style="display: none;" class="nav-list-desktop cart-products-empty">
+        <div id="cart-desktop" class="cart-products-empty">
             <div class="cart-products-title">
                 <h4>Cart</h4>
             </div>
@@ -245,13 +245,13 @@
             <!--Quantidade do produto-->
                 <div class="button-product">
                     <div class="button-quantity">
-                        <button type="button">
+                        <button type="button" class="sub">
                             <img src="./images/icon-minus.svg" alt="Remove">
                         </button>
                 
                         <span class="value-quantity">0</span> 
                 
-                        <button>
+                        <button type="button" class="add">
                             <img src="./images/icon-plus.svg" alt="Add">
                         </button>
                     </div>
@@ -264,11 +264,14 @@
             </div>
     </main>
 
-
+    <!--
     <div class="attribution" style="display: none;">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Neissandy Silva</a>.
     </div>
+    -->
+
+    <script src="js/details.js"></script>
 </body>
 </html>
 
