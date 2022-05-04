@@ -3,19 +3,23 @@ document.addEventListener('DOMContentLoaded', () => {
     //Funcionou mais ou menos
     //Quantidade Produto
     const quantityElement = document.querySelector('.button-quantity');
-    const sub = document.querySelector('.sub');
-    const add = document.querySelector('.add');
-    const quantity = document.querySelector('.value-quantity');
+    const sub = document.querySelectorAll('.sub');
+    const add = document.querySelectorAll('.add');
+    const quantity = document.querySelectorAll('.value-quantity');
 
-    add.addEventListener('click', () => {
-      const newQtd = parseInt(quantity.innerText) + 1;
-      quantity.innerHTML = newQtd;
-    });
+    add.forEach(item => {
+      item.addEventListener('click', () => {
+        const newQtd = parseInt(quantity[0].innerText) + 1;
+        quantity.forEach(item => item.innerHTML = newQtd);
+      });   
+    })
 
-    sub.addEventListener('click', () => {
-      const newQtd = parseInt(quantity.innerText) - 1;
-      if (newQtd >= 0) quantity.innerHTML = newQtd;
-    });
+    sub.forEach(item => {
+      item.addEventListener('click', () => {
+        const newQtd = parseInt(quantity[0].innerText) - 1;
+        if (newQtd >= 0) quantity.forEach(item => item.innerHTML = newQtd);
+      });
+    })
 
 
     //Aparecer e desaparecer carrinho
