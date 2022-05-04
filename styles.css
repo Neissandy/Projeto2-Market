@@ -275,6 +275,10 @@ p{
 @media screen and (min-width: 1024px) {
     .hide-nav-mobile { display: none; }
 
+    .hidden{
+        display: none;
+    }
+
     /* Tag Main Desktop */
     .main-desktop{
         display: flex;
@@ -549,9 +553,7 @@ p{
     }
 
 
-    .hidden{
-        display: none;
-    }
+
     
 }
 
